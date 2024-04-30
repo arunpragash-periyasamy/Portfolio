@@ -33,45 +33,104 @@ const Sidebar = () => {
         console.log(useDark.matches);
     },[currentState])
     return (
-        <div className="">
-            <nav className="sidebar">
-                <NavLink to="/message" className={({isActive}) => isActive ? "active" : ""
-  }>Message</NavLink>
-                <NavLink to="/home" className={({ isActive, isPending, isTransitioning }) =>
-    [
-      isPending ? "pending" : "",
-      isActive ? "active" : "",
-      isTransitioning ? "transitioning" : "",
-    ].join(" ")
-  }>Home</NavLink>
-                <NavLink to="/about" className={({ isActive, isPending, isTransitioning }) =>
-    [
-      isPending ? "pending" : "",
-      isActive ? "active" : "",
-      isTransitioning ? "transitioning" : "",
-    ].join(" ")
-  }>About</NavLink>
-            </nav>
-            <ul>
-                <li className="align-items-center active">
-                    <div className="icon"><MdOutlinePersonOutline />
-                    </div>
-                    <div className="name">About</div>
-                </li>
-                <li className="align-items-center">
-                    <div className="icon"><MdOutlinePersonOutline />
-                    </div>
-                    <div className="name">About</div>
-                </li>
-                <li className="align-items-center">
-                    <div className="icon"><MdOutlinePersonOutline />
-                    </div>
-                    <div className="name">About</div>
-                </li>
-            </ul>
-            <button onClick={notification}>Notification</button>
-            <button onClick={()=>toggleTheme(currentState)}>Dark/Light</button>
-        </div>
-    )
+      <nav className="sidebar d-flex flex-column">
+        <NavLink
+          to="/about"
+          className={({ isActive, isPending, isTransitioning }) =>
+            [
+              isPending ? "pending" : "",
+              isActive ? "active" : "",
+              isTransitioning ? "transitioning" : "",
+            ].join(" ") + " d-flex flex-column"
+          }
+        >
+          {" "}
+          <span className="icon center">
+            <MdOutlinePersonOutline />{" "}
+          </span>
+          <span className="name center">About</span>
+        </NavLink>
+        <NavLink
+          to="/resume"
+          className={({ isActive, isPending, isTransitioning }) =>
+            [
+              isPending ? "pending" : "",
+              isActive ? "active" : "",
+              isTransitioning ? "transitioning" : "",
+            ].join(" ") + " d-flex flex-column"
+          }
+        >
+          {" "}
+          <span className="icon center">
+            <MdOutlinePersonOutline />{" "}
+          </span>
+          <span className="name center">Resume</span>
+        </NavLink>
+        <NavLink
+          to="/works"
+          className={({ isActive, isPending, isTransitioning }) =>
+            [
+              isPending ? "pending" : "",
+              isActive ? "active" : "",
+              isTransitioning ? "transitioning" : "",
+            ].join(" ") + " d-flex flex-column"
+          }
+        >
+          {" "}
+          <span className="icon center">
+            <MdOutlinePersonOutline />{" "}
+          </span>
+          <span className="name center">Works</span>
+        </NavLink>
+        <NavLink
+          to="/blog"
+          className={({ isActive, isPending, isTransitioning }) =>
+            [
+              isPending ? "pending" : "",
+              isActive ? "active" : "",
+              isTransitioning ? "transitioning" : "",
+            ].join(" ") + " d-flex flex-column"
+          }
+        >
+          {" "}
+          <span className="icon center">
+            <MdOutlinePersonOutline />{" "}
+          </span>
+          <span className="name center">Blog</span>
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive, isPending, isTransitioning }) =>
+            [
+              isPending ? "pending" : "",
+              isActive ? "active" : "",
+              isTransitioning ? "transitioning" : "",
+            ].join(" ") + " d-flex flex-column"
+          }
+        >
+          {" "}
+          <span className="icon center">
+            <MdOutlinePersonOutline />{" "}
+          </span>
+          <span className="name center">Contact</span>
+        </NavLink>
+        <NavLink
+          to="/products"
+          className={({ isActive, isPending, isTransitioning }) =>
+            [
+              isPending ? "pending" : "",
+              isActive ? "active" : "",
+              isTransitioning ? "transitioning" : "",
+            ].join(" ") + " d-flex flex-column"
+          }
+        >
+          {" "}
+          <span className="icon center">
+            <MdOutlinePersonOutline />{" "}
+          </span>
+          <span className="name center">Products</span>
+        </NavLink>
+      </nav>
+    );
 }
 export default Sidebar;
