@@ -1,6 +1,31 @@
+.card{
+    margin-left: 20px;
+    width: 486px;
+    height: 679px;
+    border: 50;
+    box-shadow: -15px -15px 10px #b9944b3f;
+}
+
+.card-content{
+    position: relative;
+}
 
 .profile-image{
-    margin: 80px 0 20px;
+    margin: 50% 30% 40% 40%;
     width: 140px;
     border-radius: 50%;
+}
+
+.background-image img{
+    width: 100%;
+}
+
+.profile-image{
+position: absolute;
+
+}
+
+.profile-image img{
+    border-radius: 50%;
+    height: 100px;
 }

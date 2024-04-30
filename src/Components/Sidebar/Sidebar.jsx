@@ -41,7 +41,7 @@ const Sidebar = () => {
               isPending ? "pending" : "",
               isActive ? "active" : "",
               isTransitioning ? "transitioning" : "",
-            ].join(" ") + " d-flex flex-column"
+            ].join(" ") + "link-items"
           }
         >
           {" "}
@@ -57,7 +57,7 @@ const Sidebar = () => {
               isPending ? "pending" : "",
               isActive ? "active" : "",
               isTransitioning ? "transitioning" : "",
-            ].join(" ") + " d-flex flex-column"
+            ].join(" ") + "link-items"
           }
         >
           {" "}
@@ -73,7 +73,7 @@ const Sidebar = () => {
               isPending ? "pending" : "",
               isActive ? "active" : "",
               isTransitioning ? "transitioning" : "",
-            ].join(" ") + " d-flex flex-column"
+            ].join(" ") + "link-items"
           }
         >
           {" "}
@@ -89,7 +89,7 @@ const Sidebar = () => {
               isPending ? "pending" : "",
               isActive ? "active" : "",
               isTransitioning ? "transitioning" : "",
-            ].join(" ") + " d-flex flex-column"
+            ].join(" ") + "link-items"
           }
         >
           {" "}
@@ -105,7 +105,7 @@ const Sidebar = () => {
               isPending ? "pending" : "",
               isActive ? "active" : "",
               isTransitioning ? "transitioning" : "",
-            ].join(" ") + " d-flex flex-column"
+            ].join(" ") + "link-items"
           }
         >
           {" "}
@@ -121,7 +121,7 @@ const Sidebar = () => {
               isPending ? "pending" : "",
               isActive ? "active" : "",
               isTransitioning ? "transitioning" : "",
-            ].join(" ") + " d-flex flex-column"
+            ].join(" ") + "link-items"
           }
         >
           {" "}

@@ -1,0 +1,56 @@
+#parent{
+    border: 2px solid salmon;
+    height: 800px;
+    width:900px;
+    padding: 10px;
+    margin:100px;
+}
+
+.one{
+    background-color: greenyellow;
+    width:100px;
+    height: 100px;
+    margin: 10px;
+    position: absolute;
+    z-index: 10;
+}
+
+.two{
+    background-color: maroon;
+    width:100px;
+    height: 100px;
+    margin: 10px;
+    position: absolute;
+}
+
+.three{
+    background-color: lightskyblue;
+    width:100px;
+    height: 100px;
+    margin: 10px;
+    position: absolute;
+}
+
+.four{
+    background-color: darkgoldenrod;
+    width:100px;
+    height: 100px;
+    margin: 10px;
+    position: absolute;
+}
+
+.five{
+    background-color: chocolate;
+    width:100px;
+    height: 100px;
+    margin: 10px;
+    position: absolute;
+}
+
+.six{
+    background-color: blueviolet;
+    width:100px;
+    height: 100px;
+    margin: 10px;
+    position: absolute;
+}
