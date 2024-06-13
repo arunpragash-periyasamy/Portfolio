@@ -1,0 +1,12 @@
+/* src/CursorFollower.css */
+.circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(247, 180, 56, 0.61);
+  border-radius: 50%;
+  pointer-events: none; /* Ensures the circle doesn't interfere with mouse events */
+  transition: left 0.1s ease, top 0.1s ease; /* Smooth movement */
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}

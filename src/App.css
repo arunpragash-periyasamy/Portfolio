@@ -1,7 +1,94 @@
-.app{
-    background-color: #161616;
-    height:70%;
-    width: 75%;
-    display: flex;
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
+  .layout {
+    position: relative;
+    z-index: 1; /* Ensure content is above the background */
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    color: green;
+    text-align: center;
+    right:50;
+    left:50;
+    top:50;
+    bottom:50;
+  }
+
+  p{
+  font-family: "Lekton", monospace;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  display: inline-block;
+  }
+
+.title {
+  font-family: "Lekton", monospace;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+  display: inline-block;
 }
+
+.title::before {
+  content: attr(data-first-letters);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.2ch; /* Adjust size as needed */
+  height: 1.15em; /* Adjust size as needed */
+  background: linear-gradient(135deg, rgba(246, 184, 70, .4) 0%, rgba(246, 184, 70, .01) 100%);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1em; /* Adjust to align text vertically */
+  color: transparent; /* Hide the pseudo-element text */
+  z-index: 1; /* Ensure circle is behind text */
+}
+
+.title::first-letter {
+  position: relative;
+  z-index: 1; /* Ensure text is above the pseudo-element */
+}
+ .title:after {
+    content: '';
+    position: absolute;
+    left: -30px;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: -moz-radial-gradient(left, ellipse cover, #ddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: -webkit-radial-gradient(left, ellipse cover, #ddd 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(ellipse at left, #ddd 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+
+
+  .btn-link, a{
+    text-decoration: none;
+  }
+
+  .content{
+    min-width: 200px;
+  }
+
+ 
+  @media screen and (min-width:768px){
+    .content{
+      min-width: 600px;
+      min-height: 500px;
+    }
+  }
+
+  @media screen and (min-width: 1024px){
+    .content{
+      min-width: 500px;
+      min-height: 640px;
+    }
+  }
+
+  @media screen and (min-width: 1200px){
+    .content{
+      min-width: 660px;
+      min-height: 640px;
+    }
+  }

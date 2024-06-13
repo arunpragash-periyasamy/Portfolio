@@ -2,18 +2,33 @@
   "homepage": ".",
   "scripts": {
     "start": "parcel index.html",
+    "dev": "vite",
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.3.7",
+    "antd": "^5.18.0",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "parcel": "^2.12.0",
+    "puppeteer": "^22.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1",
-    "react-router-dom": "^6.22.3"
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.22.3",
+    "react-type-animation": "^3.2.0",
+    "styled-components": "^6.1.11"
   },
   "devDependencies": {
-    "process": "^0.11.10"
+    "@parcel/transformer-raw": "^2.12.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "process": "^0.11.10",
+    "vite": "^5.2.13"
   }
 }

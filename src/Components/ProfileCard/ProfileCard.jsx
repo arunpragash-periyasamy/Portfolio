@@ -1,0 +1,231 @@
+// import React from "react";
+// import { Card, Avatar, Typography, Button, Space } from "antd";
+// import { TypeAnimation } from "react-type-animation";
+
+// import { TbBrandLeetcode } from "react-icons/tb";
+
+// import {
+//   DownloadOutlined,
+//   MailOutlined,
+//   TwitterOutlined,
+//   GithubOutlined,
+//   WhatsAppOutlined,
+// } from "@ant-design/icons";
+// import Mountain from "../../assets/Mountain.webp";
+// import ProfileCrop from "../../assets/profile.png";
+// const { Title } = Typography;
+// import Resume from "../../assets/resume.pdf";
+// const ProfileCard = () => {
+//   return (
+//     <Card
+//       style={{
+//         // width: 500,
+//         textAlign: "center",
+//         backgroundColor: "#222222",
+//       }}
+//       cover={
+//         <img
+//           alt="background"
+//           src={Mountain} // Replace with your background image URL
+//         />
+//       }
+//     >
+//       <Avatar
+//         size={200}
+//         src={ProfileCrop} // Replace with your avatar image URL
+//         style={{ marginTop: "-150px", border: "2px solid white" }}
+//       />
+//       <Title level={3} style={{ marginTop: 10, color: "#E9E9E9" }}>
+//         Arunpragash
+//       </Title>
+//       <div>
+//         <TypeAnimation
+//           sequence={[
+//             "Front End Developer",
+//             1500,
+//             "Back End Developer",
+//             1500,
+//             "Full Stack Developer",
+//             1500,
+//           ]}
+//           wrapper="span"
+//           speed={50}
+//           style={{ color: "#F6B846", display: "inline-block" }}
+//           repeat={Infinity}
+//         />
+//       </div>
+//       <Space size="middle" style={{ marginTop: 20 }}>
+//         <Button shape="circle" icon={<TbBrandLeetcode />} href="" target="_blank"/>
+//         <Button shape="circle" icon={<TwitterOutlined />} />
+//         <Button shape="circle" icon={<GithubOutlined />} />
+//         <Button shape="circle" icon={<WhatsAppOutlined />} />
+//       </Space>
+
+//       <div
+//         style={{
+//           marginTop: "30px",
+//           display: "flex",
+//           justifyContent: "center",
+//           gap: 20,
+//           paddingBottom: 20,
+//         }}
+//       >
+//         <Button
+//           className="btn-link"
+//           type="primary"
+//           icon={<DownloadOutlined />}
+//           size="large"
+//           href={Resume}
+//           target="_blank"
+//           style={{ borderRadius: 50 }}
+//         >
+//           DOWNLOAD CV
+//         </Button>
+//         <Button
+//           className="btn-link"
+//           type="default"
+//           icon={<MailOutlined />}
+//           size="large"
+//           href="mailto:aparunpragash@gmail.com"
+//           target="_blank"
+//           style={{ borderRadius: 50 }}
+//         >
+//           CONTACT ME
+//         </Button>
+//       </div>
+//     </Card>
+//   );
+// };
+
+// export default ProfileCard;
+
+
+
+import React from "react";
+import { Card, Avatar, Typography, Button, Space } from "antd";
+import { TypeAnimation } from "react-type-animation";
+
+import { TbBrandLeetcode } from "react-icons/tb";
+
+import {
+  DownloadOutlined,
+  MailOutlined,
+  TwitterOutlined,
+  GithubOutlined,
+  WhatsAppOutlined,
+} from "@ant-design/icons";
+import Mountain from "../../assets/Mountain.webp";
+import ProfileCrop from "../../assets/profile.png";
+const { Title } = Typography;
+import Resume from "../../assets/resume.pdf";
+const ProfileCard = () => {
+  return (
+    <Card
+      style={{
+        textAlign: "center",
+        backgroundColor: "#222222",
+      }}
+      cover={
+        <img
+          alt="background"
+          src={Mountain} // Replace with your background image URL
+        />
+      }
+      bodyStyle={{
+        padding: "20px",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          position: "relative",
+          marginTop: "-150px",
+        }}
+      >
+        <Avatar
+          // size={{ xs: 120, sm: 150, md: 200, lg: 400, xl: 400, xxl: 200 }}
+          size={{xs:200, sm:200, md:150, lg:150, xl:200, xxl:200}}
+          src={ProfileCrop} // Replace with your avatar image URL
+          style={{
+            border: "2px solid white",
+          }}
+        />
+      </div>
+      <Title level={3} style={{ marginTop: 10, color: "#E9E9E9" }}>
+        Arunpragash
+      </Title>
+      <div>
+        <TypeAnimation
+          sequence={[
+            "Front End Developer",
+            1500,
+            "Back End Developer",
+            1500,
+            "Full Stack Developer",
+            1500,
+          ]}
+          wrapper="span"
+          speed={50}
+          style={{ color: "#F6B846", display: "inline-block" }}
+          repeat={Infinity}
+        />
+      </div>
+      <Space
+        size="middle"
+        style={{
+          marginTop: 20,
+          flexWrap: "wrap",
+          justifyContent: "center",
+        }}
+      >
+        <Button
+          shape="circle"
+          icon={<TbBrandLeetcode />}
+          href=""
+          target="_blank"
+        />
+        <Button shape="circle" icon={<TwitterOutlined />} />
+        <Button shape="circle" icon={<GithubOutlined />} />
+        <Button shape="circle" icon={<WhatsAppOutlined />} />
+      </Space>
+
+      <div
+        style={{
+          marginTop: "30px",
+          display: "flex",
+          justifyContent: "center",
+          gap: 20,
+          paddingBottom: 20,
+          flexWrap: "wrap",
+        }}
+      >
+        <Button
+          className="btn-link"
+          type="primary"
+          icon={<DownloadOutlined />}
+          size="large"
+          href={Resume}
+          target="_blank"
+          style={{ borderRadius: 50 }}
+        >
+          DOWNLOAD CV
+        </Button>
+        <Button
+          className="btn-link"
+          type="default"
+          icon={<MailOutlined />}
+          size="large"
+          href="mailto:aparunpragash@gmail.com"
+          target="_blank"
+          style={{ borderRadius: 50 }}
+        >
+          CONTACT ME
+        </Button>
+      </div>
+    </Card>
+  );
+};
+
+export default ProfileCard;

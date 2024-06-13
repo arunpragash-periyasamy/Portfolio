@@ -1,0 +1,35 @@
+.vertical-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: move linear infinite;
+}
+
+.piece {
+  width: 100%;
+  background-color: #eca421;
+  margin-bottom: 20px;
+  animation: move linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+
