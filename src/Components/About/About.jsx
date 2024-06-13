@@ -2,12 +2,12 @@ import { Col, Row } from "antd";
 import React from "react";
 const About = () => {
     return (
-      <div >
+      <div>
         <div style={{ textAlign: "left" }}>
           <h2 className="title">About Me</h2>
         </div>
         <Row justify="" style={{ textAlign: "justify" }}>
-          <Col xs={24} sm={24} md={15} lg={20} xl={20}>
+          <Col xs={24} sm={24} md={15} lg={24} xl={24} xxl={24}>
             <h3>
               <p>
                 <strong>Hello! I'm Arunpragash.</strong>
@@ -36,7 +36,7 @@ const About = () => {
           <h2 className="title">My Services</h2>
         </div>
         <Row justify="" gutter={[16, 16]}>
-          <Col xs={24} sm={12} md={15} lg={10}>
+          <Col xs={24} sm={12} md={15} lg={12} xl={12} xxl={12}>
             <div style={{ fontSize: "40px" }}>
               <i className="fab fa-html5" style={{ color: "#ff9900" }}></i>
             </div>
@@ -46,7 +46,7 @@ const About = () => {
               your marketing.
             </p>
           </Col>
-          <Col xs={24} sm={24} md={15} lg={10}>
+          <Col xs={24} sm={24} md={15} lg={12} xl={12} xxl={12}>
             <div style={{ fontSize: "40px" }}>
               <i className="fab fa-php" style={{ color: "#ff9900" }}></i>
             </div>

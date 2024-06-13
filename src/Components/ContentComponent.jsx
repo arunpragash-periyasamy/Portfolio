@@ -9,8 +9,7 @@ const ContentComponent = () => {
       style={{
         backgroundColor: "#1c1c1c",
         color: "#fff",
-        paddingTop: "20px",
-        paddingLeft: "20px",
+        padding:"15tpx",
         borderRadius: "10px",
         width: "100%",
         maxWidth: "900px", // Adjust maxWidth as needed
@@ -22,9 +21,9 @@ const ContentComponent = () => {
       }}
       className="custom-scrollbar"
     >
-      <div className="content">
+      <Col className="content" style={{padding:"20px"}}>
       <Outlet />
-      </div>
+      </Col>
     </Row>
   );
 };

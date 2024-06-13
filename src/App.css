@@ -6,7 +6,6 @@
     background-color: rgba(0, 0, 0, 0.8); /* Optional: semi-transparent background */
     padding: 20px;
     border-radius: 10px;
-    color: green;
     text-align: center;
     right:50;
     left:50;
@@ -61,6 +60,9 @@
     background: radial-gradient(ellipse at left, #ddd 0%, rgba(255, 255, 255, 0) 70%);
 }
 
+.main-content{
+  left: 0;
+}
 
 
   .btn-link, a{
@@ -71,6 +73,14 @@
     min-width: 200px;
   }
 
+  @media screen and (max-width:1024px) {
+    .layout{
+      left: 0;
+      right: 0;
+      top:70;
+      bottom:0;
+    }
+  }
  
   @media screen and (min-width:768px){
     .content{
@@ -88,7 +98,13 @@
 
   @media screen and (min-width: 1200px){
     .content{
-      min-width: 660px;
+      min-width: 600px;
       min-height: 640px;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    .content{
+      min-width: 700px;
     }
   }

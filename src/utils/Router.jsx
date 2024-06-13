@@ -5,6 +5,7 @@ import ContentComponent from '../Components/ContentComponent';
 import About from '../Components/About/About';
 import Work from '../Components/Work';
 import Resume from '../Components/Resume/Resume';
+import NewProductForm from '../NewProductForm';
 
 const App = lazy(() => import("../App") );
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/add-product",
+    element:<NewProductForm/>
+  }
 ]);
 
 export default router;

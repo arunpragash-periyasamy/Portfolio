@@ -11,7 +11,7 @@ const App = () => {
     <>
       <CursorFollower/>
       <Background/>
-      <div className={screens.lg ? "container" : "container-fluid"}>
+      <div className={`main-content${screens.lg ? "container" : ""}`}>
         <Main />
       </div>
     </>

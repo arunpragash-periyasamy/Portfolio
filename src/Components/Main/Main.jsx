@@ -10,13 +10,13 @@ const Main = () => {
       <Content className="d-flex align-items-center">
         <div className="d-flex align-items-center">
           <Row className="d-flex align-items-center">
-            <Col sm={2} md={2} lg={2}>
+            <Col sm={2} md={2} lg={2} xl={2} xxl={2}>
               <Sidebar />
             </Col>
-            <Col sm={24} md={8} lg={8}>
+            <Col sm={24} md={8} lg={8} xl={8} xxl={8}>
               <ProfileCard />
             </Col>
-            <Col sm={24} md={14} lg={14}>
+            <Col sm={24} md={14} lg={14} xl={14} xxl={14}>
               <ContentComponent/>
             </Col>
           </Row>
