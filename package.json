@@ -4,7 +4,7 @@
     "start": "parcel index.html",
     "dev": "vite",
     "predeploy":"parcel build index.html",
-    "deploy":"gh-pages -d build",
+    "deploy":"gh-pages -d build index.html",
     "build": "parcel build index.html"
   },
   "dependencies": {
