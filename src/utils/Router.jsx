@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <Suspense fallback={<Loader />}>
-        <App/>
+        <App />
       </Suspense>
     ),
     children: [
@@ -23,24 +23,36 @@ const router = createBrowserRouter([
         children: [
           {
             path: "/",
-            element: <About/>
+            element: (
+              <Suspense fallback={<Loader />}>
+                <About />
+              </Suspense>
+            ),
           },
           {
             path: "/work",
-            element: <Work/>
+            element: (
+              <Suspense fallback={<Loader />}>
+                <Work />
+              </Suspense>
+            ),
           },
           {
             path: "/resume",
-            element: <Resume/>
-          }
-        ]
+            element: (
+              <Suspense fallback={<Loader />}>
+                <Resume />
+              </Suspense>
+            ),
+          },
+        ],
       },
     ],
   },
   {
     path: "/add-product",
-    element:<NewProductForm/>
-  }
+    element: <NewProductForm />,
+  },
 ]);
 
 export default router;

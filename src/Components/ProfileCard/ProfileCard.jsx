@@ -21,6 +21,7 @@ const ProfileCard = () => {
       style={{
         textAlign: "center",
         backgroundColor: "#222222",
+        boxShadow: "-10px -10px 5px rgba(247, 180, 56, 0.41)",
       }}
       cover={
         <img
@@ -28,9 +29,6 @@ const ProfileCard = () => {
           src={Mountain} // Replace with your background image URL
         />
       }
-      bodyStyle={{
-        padding: "20px",
-      }}
     >
       <div
         style={{
@@ -43,7 +41,7 @@ const ProfileCard = () => {
       >
         <Avatar
           // size={{ xs: 120, sm: 150, md: 200, lg: 400, xl: 400, xxl: 200 }}
-          size={{xs:200, sm:200, md:150, lg:150, xl:200, xxl:200}}
+          size={{ xs: 200, sm: 200, md: 150, lg: 150, xl: 200, xxl: 200 }}
           src={ProfileCrop} // Replace with your avatar image URL
           style={{
             border: "2px solid white",
