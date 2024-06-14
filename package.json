@@ -1,11 +1,11 @@
 {
-  "homepage": "https://aparunpragash.netlify.app/",
+  
   "scripts": {
     "start": "parcel index.html",
     "dev": "vite",
     "predeploy": "parcel build index.html --dist-dir build --no-cache",
     "deploy": "gh-pages -d build",
-    "build": "parcel build index.html --dist-dir build"
+    "build": "parcel build index.html"
   },
   "dependencies": {
     "@ant-design/icons": "^5.3.7",
