@@ -15,6 +15,7 @@ import Mountain from "../../assets/Mountain.webp";
 import ProfileCrop from "../../assets/profile.png";
 const { Title } = Typography;
 import Resume from "../../assets/resume.pdf";
+import { FaLinkedinIn } from "react-icons/fa6";
 const ProfileCard = () => {
   return (
     <Card
@@ -78,12 +79,27 @@ const ProfileCard = () => {
         <Button
           shape="circle"
           icon={<TbBrandLeetcode />}
-          href=""
+          href="https://leetcode.com/u/aparunpragash/"
           target="_blank"
         />
-        <Button shape="circle" icon={<TwitterOutlined />} />
-        <Button shape="circle" icon={<GithubOutlined />} />
-        <Button shape="circle" icon={<WhatsAppOutlined />} />
+        <Button
+          shape="circle"
+          icon={<GithubOutlined />}
+          href="https://github.com/arunpragash-periyasamy"
+          target="_blank"
+        />
+        <Button
+          shape="circle"
+          icon={<FaLinkedinIn />}
+          href="www.linkedin.com/in/arunpragashap"
+          target="_blank"
+        />
+        <Button
+          shape="circle"
+          icon={<WhatsAppOutlined />}
+          href="https://wa.me/+916382868122"
+          target="_blank"
+        />
       </Space>
 
       <div
