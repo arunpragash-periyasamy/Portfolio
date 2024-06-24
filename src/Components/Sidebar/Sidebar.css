@@ -2,3 +2,34 @@
   color: #ff9900 !important;
   background-color: transparent !important;
 }
+
+/* Default styles for the sidebar (vertical) */
+.menu-icon {
+  font-size: 16px;
+}
+
+/* Styles for the horizontal menu */
+.horizontal-menu {
+  display: none;
+  justify-content: space-around;
+  background-color: #001529; /* Adjust based on the dark theme color */
+}
+
+.horizontal-menu .ant-menu-item {
+  display: inline-block;
+  width: auto;
+}
+
+/* Media query to apply horizontal layout on tablet and mobile devices */
+@media (max-width: 768px) {
+  .vertical-menu {
+    display: none; /* Hide vertical menu */
+  }
+
+  .horizontal-menu {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+  }
+}
+

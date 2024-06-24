@@ -1,7 +1,7 @@
 // ContentComponent.jsx
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Row, Col } from "antd";
+import { Row, Col, Card } from "antd";
 import { Outlet } from "react-router-dom";
 const ContentComponent = () => {
   return (
@@ -9,7 +9,7 @@ const ContentComponent = () => {
       style={{
         backgroundColor: "#1c1c1c",
         color: "#fff",
-        padding:"15tpx",
+        padding: "15tpx",
         borderRadius: "10px",
         width: "100%",
         maxWidth: "900px", // Adjust maxWidth as needed
@@ -21,9 +21,7 @@ const ContentComponent = () => {
       }}
       className="custom-scrollbar"
     >
-      <Col className="content" style={{padding:"20px"}}>
-      <Outlet />
-      </Col>
+          <Outlet />
     </Row>
   );
 };
