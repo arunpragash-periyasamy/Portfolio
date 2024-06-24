@@ -1,0 +1,15 @@
+.custom-header {
+  background: #001529; /* Default Ant Design dark theme background */
+  padding: 0;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.horizontal-menu {
+  line-height: 64px; /* Align menu items vertically within the header */
+}
+
+.menu-icon {
+  font-size: 18px; /* Adjust icon size */
+}
