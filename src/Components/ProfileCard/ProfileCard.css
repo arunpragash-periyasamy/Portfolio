@@ -5,3 +5,9 @@
           position: "relative";
           margin-top: "-150px";
 }
+
+.profile-card{
+     text-align: "center";
+        background-color: "#222222";
+        box-shadow: "-10px -10px 5px rgba(247, 180, 56, 0.41)";
+}

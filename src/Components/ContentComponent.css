@@ -1,0 +1,12 @@
+.content-container{
+     background-color: "#1c1c1c";
+        color: "#fff";
+        padding: "15tpx";
+        border-radius: "10px";
+        width: "100%";
+        max-width: "900px"; 
+        height: "50vh"; 
+        overflow: "auto";
+        margin: "0 auto";
+        scrollbar-width: "none"; 
+  }

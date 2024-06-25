@@ -17,14 +17,11 @@ const { Title } = Typography;
 import Resume from "../../assets/resume.pdf";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { BiLogoMedium } from "react-icons/bi";
+import "./ProfileCard.css"
 const ProfileCard = () => {
   return (
     <Card
-      style={{
-        textAlign: "center",
-        backgroundColor: "#222222",
-        boxShadow: "-10px -10px 5px rgba(247, 180, 56, 0.41)",
-      }}
+      className="profile-card"
       cover={
         <img
           alt="background"

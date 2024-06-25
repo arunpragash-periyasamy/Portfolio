@@ -2,18 +2,18 @@ import { UserOutlined } from "@ant-design/icons";
 import { Layout, Menu } from "antd";
 import { FaEye, FaRegRectangleList } from "react-icons/fa6";
 import { Link, useLocation } from "react-router-dom";
-import "./Header.css";
+// import "./Header.css";
 
 const Header = () => {
   const { Header } = Layout;
   const { pathname } = useLocation();
 
   return (
-    <Header className="custom-header">
+    <Header className="custom-header mb-2">
       <Menu
         mode="horizontal"
         theme="dark"
-        className="horizontal-menu"
+        className="d-flex justify-content-around"
         defaultSelectedKeys={[pathname]}
       >
         <Menu.Item key="/" icon={<UserOutlined className="menu-icon" />}>

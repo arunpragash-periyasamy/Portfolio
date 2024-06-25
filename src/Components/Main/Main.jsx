@@ -12,9 +12,9 @@ const Main = () => {
   return ( 
     <Layout className="layout">
       {!screens.lg ? <Header/> : null}
-      <Content className="d-flex align-items-center">
+      <Content className="">
         <div className="d-flex align-items-center">
-          <Row className="d-flex align-items-center">
+          <Row className=" main-row">
             <Col sm={24} md={24} lg={2} xl={2} xxl={2}>
               {screens.lg ? <Sidebar /> : null}
             </Col>
