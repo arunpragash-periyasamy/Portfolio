@@ -11,8 +11,24 @@ const About = () => {
           <Col xs={24} sm={24} md={15} lg={24} xl={24} xxl={24}>
             <Title level={2}>Hello! I'm Arunpragash.</Title>
             <p>
-              Front-end developer & Back-End developer from TamilNadu, India. I
-              have an experience with Reactjs, Nodejs, MySQL, jQuery, MongoDB.
+              Hello there! 👋 I'm Arunpragash, a passionate Software Developer
+              on a mission to bring innovative ideas to life through elegant
+              code and captivating design. As a fresher, I specialize in a wide
+              array of technologies including ReactJS, ReduxJS, NodeJS, Express,
+              MongoDB, MySQL, jQuery, PHP, Bootstrap, Antd, Java, and
+              JavaScript.
+            </p>
+            <p>
+              I excel in transforming innovative concepts into reality through
+              efficient coding and thoughtful design. With a strong foundation
+              in both front-end and back-end development, I am dedicated to
+              creating user-friendly web applications with a focus on responsive
+              design.
+            </p>
+            <p>
+              As a team player and problem-solving enthusiast, I'm geared up to
+              make a significant impact on meaningful projects. Let's build
+              something extraordinary together!
             </p>
             <div className="d-flex justify-content-between">
               <div>
@@ -38,8 +54,8 @@ const About = () => {
             </div>
             <Title level={2}>Front-end</Title>
             <p>
-              Modern and mobile-ready website that will help you reach all of
-              your marketing.
+              Transform designs into responsive, pixel-perfect web pages that
+              captivate and engage users.
             </p>
           </Col>
           <Col xs={24} sm={24} md={15} lg={12} xl={12} xxl={12}>
@@ -48,8 +64,8 @@ const About = () => {
             </div>
             <Title level={2}>Back-end</Title>
             <p>
-              UI/UX focus on the user, frontend focus on the settings of the
-              user, and backend focus on the data.
+              Develop secure, high-performance backend systems to handle complex
+              business logic and data management.
             </p>
           </Col>
         </Row>

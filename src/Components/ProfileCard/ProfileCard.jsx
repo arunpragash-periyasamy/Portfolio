@@ -16,6 +16,7 @@ import ProfileCrop from "../../assets/profile.png";
 const { Title } = Typography;
 import Resume from "../../assets/resume.pdf";
 import { FaLinkedinIn } from "react-icons/fa6";
+import { BiLogoMedium } from "react-icons/bi";
 const ProfileCard = () => {
   return (
     <Card
@@ -92,6 +93,12 @@ const ProfileCard = () => {
           shape="circle"
           icon={<FaLinkedinIn />}
           href="www.linkedin.com/in/arunpragashap"
+          target="_blank"
+        />
+        <Button
+          shape="circle"
+          icon={<BiLogoMedium />}
+          href="https://medium.com/@arunpragashap"
           target="_blank"
         />
         <Button

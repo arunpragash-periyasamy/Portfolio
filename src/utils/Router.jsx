@@ -6,6 +6,7 @@ import About from '../Components/About/About';
 import Work from '../Components/Work/Work';
 import Resume from '../Components/Resume/Resume';
 import NewProductForm from '../NewProductForm';
+import Blog from '../Components/Blog/Blog';
 
 const App = lazy(() => import("../App") );
 const router = createBrowserRouter([
@@ -42,6 +43,14 @@ const router = createBrowserRouter([
             element: (
               <Suspense fallback={<Loader />}>
                 <Resume />
+              </Suspense>
+            ),
+          },
+          {
+            path: "/blog",
+            element: (
+              <Suspense fallback={<Loader />}>
+                <Blog />
               </Suspense>
             ),
           },
