@@ -1,0 +1,42 @@
+/* Navbar.css */
+.navbar-container {
+  position: fixed!important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #001529;
+  padding: 1px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.menu-icon {
+  font-size: 16px;
+}
+
+.navbar {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .ant-menu-item {
+  margin: 0 10px;
+}
+
+.navbar .ant-menu-item a {
+  color: #a2e1e4;
+  font-size: 20px;
+}
+
+/* Remove underline from selected menu item */
+.navbar .ant-menu-item-selected {
+  border-bottom: none !important;
+}
+
+.navbar .ant-menu-item::after {
+  border-bottom: none !important;
+}

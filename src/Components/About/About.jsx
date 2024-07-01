@@ -14,21 +14,11 @@ const About = () => {
               Hello there! 👋 I'm Arunpragash, a passionate Software Developer
               on a mission to bring innovative ideas to life through elegant
               code and captivating design. As a fresher, I specialize in a wide
-              array of technologies including ReactJS, ReduxJS, NodeJS, Express,
-              MongoDB, MySQL, jQuery, PHP, Bootstrap, Antd, Java, and
-              JavaScript.
-            </p>
-            <p>
-              I excel in transforming innovative concepts into reality through
-              efficient coding and thoughtful design. With a strong foundation
-              in both front-end and back-end development, I am dedicated to
-              creating user-friendly web applications with a focus on responsive
-              design.
-            </p>
-            <p>
-              As a team player and problem-solving enthusiast, I'm geared up to
-              make a significant impact on meaningful projects. Let's build
-              something extraordinary together!
+              array of technologies including{" "}
+              <i>
+                ReactJS, NodeJS, Express, MongoDB, MySQL, Bootstrap,
+                Antd, Java.
+              </i>
             </p>
             <div className="d-flex justify-content-between">
               <div>

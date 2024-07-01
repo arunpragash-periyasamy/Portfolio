@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
 
-html, body, #root{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-}
-
   .layout {
     position: relative;
     z-index: 1; /* Ensure content is above the background */
@@ -15,13 +7,18 @@ html, body, #root{
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    right:50;
+    left:50;
+    top:50;
+    bottom:50;
   }
 
+  
   p{
   font-family: "Lekton", monospace;
   font-weight: 400;
-  font-size:24px;
   font-style: normal;
+  font-size: 24px;
   position: relative;
   display: inline-block;
   text-align: left;
@@ -71,20 +68,6 @@ html, body, #root{
 }
 
 
-.content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  overflow: auto;
-}
-
-.main-row {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  width: 100%;
-}
-
   .btn-link, a{
     text-decoration: none;
   }
@@ -93,7 +76,7 @@ html, body, #root{
     min-width: 200px;
   }
 
-  /* @media screen and (max-width:1024px) {
+  @media screen and (max-width:1024px) {
     .layout{
       left:0;
       right:0;
@@ -125,9 +108,9 @@ html, body, #root{
     .content{
       min-width: 700px;
     }
-  } */
+  }
 
-
+/* Your existing styles */
 
 .content-container {
   background-color: #1c1c1c;
@@ -138,46 +121,31 @@ html, body, #root{
   max-width: 900px;
   overflow: auto;
   margin: 0 auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
 }
 
 .content-container::-webkit-scrollbar {
   display: none;
 }
 
+/* For mobile devices */
 @media screen and (max-width: 767px) {
-  .layout {
-    padding: 10px;
-    margin-top: 620px;
-  }
-
-  .main-row {
-    flex-direction: column;
-  }
-
   .content-container {
-    height: calc(100vh - 100px); 
+    height: calc(100vh - 600px); /* Adjust based on your header height */
   }
 }
 
+/* For tablet devices */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .layout {
-    margin-top: 600px;
-    padding: 10px;
-  }
-
-  .main-row {
-    flex-direction: column;
-  }
-
   .content-container {
-    height: calc(100vh - 80px); 
+    height: calc(100vh - 80px); /* Adjust based on your header height */
   }
 }
 
+/* For larger screens */
 @media screen and (min-width: 1024px) {
   .content-container {
-    height: 50vh; 
+    height: 50vh; /* Original height */
   }
-} 
+}
