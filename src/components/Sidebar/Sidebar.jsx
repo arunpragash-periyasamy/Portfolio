@@ -16,19 +16,19 @@ const menus = [
     {
         menuName: "Blog",
         Icon: FaUser,
-        url: 'blog'
+        url: '/blog'
     },
 ]
 
 const Sidebar = ({className}) => {
 
   return (
-    <div className={`flex flex-col gap-3 py-4 bg-[#222222] rounded-md ${className}`}>
+    <div className={`flex justify-around xl:flex-col xl:gap-3 py-4 bg-[#222222] rounded-md ${className}`}>
     {
         menus.map((menu, index)=>
                 <Fragment key={menu.menuName}>
             <Menu Icon={menu.Icon} menuName={menu.menuName} url={menu.url}/>
-            {(index !== menus.length-1) && <hr className="border-slate-700 w-full" />}
+            {(index !== menus.length-1) && <hr className="hidden xl:block border-slate-700 w-full" />}
             </Fragment >
         )
     }

@@ -10,8 +10,8 @@ const App = () => {
     <div>
       <Background/>
       <CursorFollower/>
-      <div className="text-white flex justify-center items-center h-screen" id="main">
-        <Sidebar className={'mr-4'}/>
+      <div className="text-white flex flex-col xl:flex-row xl:justify-center xl:items-center min-h-screen" >
+        <Sidebar className={'xl:mr-4'}/>
         <ProfileCard/>
         <ContentBody/>
       </div>
