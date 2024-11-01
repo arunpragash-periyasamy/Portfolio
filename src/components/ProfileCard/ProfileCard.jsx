@@ -1,5 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import Profile from "../../assets/profile.png";
+import Background from "../../assets/background.jpg";
 import { BiLogoMedium } from "react-icons/bi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { TbBrandLeetcode } from "react-icons/tb";
@@ -18,8 +19,8 @@ const ProfileCard = () => {
       <div className="h-[50%]">
         <img
           className="h-full w-full"
-          src="https://ryancv.bslthemes.com/developer/wp-content/uploads/sites/3/2022/07/dev-bg-3-1200x812.jpg"
-          alt=""
+          src={Background}
+          alt="Backgorund image"
         />
       </div>
 
